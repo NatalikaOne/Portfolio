@@ -5,20 +5,24 @@
 Задача — обучить модель для прогноза оттока клиентов.
 
 ## Навыки и инструменты
-python
-pandas
-numpy
-statsmodels.tsa.seasonal.seasonal_decompose
-sklearn.model_selection.TimeSeriesSplit
-sklearn.model_selection.GridSearchCV
-sklearn.metrics.mean_squared_error
-sklearn.metrics.make_scorer
-sklearn.linear_model.LinearRegression
-sklearn.ensemble.RandomForestRegressor
-sklearn.tree.DecisionTreeRegressor
-catboost.CatBoostRegressor
-lightgbm
-matplotlib
+- python
+- pandas
+- numpy
+- statsmodels.tsa.seasonal.seasonal_decompose
+- sklearn.model_selection.TimeSeriesSplit
+- sklearn.model_selection.GridSearchCV
+- sklearn.metrics.mean_squared_error
+- sklearn.metrics.make_scorer
+- sklearn.linear_model.LogisticRegression
+- sklearn.ensemble.RandomForestClassifier
+- sklearn.tree.DecisionTreeClassifier
+- catboost.CatBoostClassifier
+- lightgbm.LGBMClassifier
+- torch
+- skorch
+- matplotlib
 
 ## Общий вывод
-Проведено исследование временного ряда на предмет трендовых и сезонных закономерностей, случайной составляющей. Проведено исследование трёх типов моделей, выбрана линейная регрессия.
+Проведено исследование и выявлены некоторые особенности входящих признаков. Установлена важность признаков, влияющих на отток клиентов. Проведено исследование пяти типов моделей, выбрана CatBoostClassifier.
+
+Даны бизнес-рекомендации заказчику.
